@@ -17,11 +17,23 @@ let imForward = imAString.split(',');
 let imReverse = imAReverseString.split(',');
 
 
-for(i = 0; i<4; i++) {
+for(let i = 0; i<4; i++) {
     if(imForward[i] === imReverse[i]) {
         console.log(imAnArray[i] + ' is a palindrome');
     }
     else {
         console.log(imAnArray[i] + ' is not a palindrome');
     }
+}
+
+let animals = ['spiders', 'snakes', 'gophers', 'big spiders'];
+
+let lastItem = animals.pop();
+let firstItem = animals.shift();
+animals.push('bat');
+animals.unshift('baby hippo');
+console.log(animals);
+
+for(let i = 0; i < animals.length; i++) {
+    console.log(animals[i]);
 }
