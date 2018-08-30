@@ -169,4 +169,4 @@ function arrayEditor(functionName, propertyName, subProp, newValue, index) {
   functionName();
 }
 
-arrayEditor(statementStringBuilder, statements, statement, 'Strict tarrifs on foreign pies', 1);
+arrayEditor(statementStringBuilder, 'statements', 'statement', 'Strict tarrifs on foreign pies', 1);
