@@ -156,3 +156,17 @@ imagesStringBuilder();
 missionStringBuilder();
 districtStringBuilder();
 eventStringBuilder();
+
+function stringEditor(functionName, newValue, propertyName) {
+  elizabethSanger[propertyName] = newValue;
+  functionName();
+}
+
+stringEditor(districtStringBuilder, 8, 'congressionalDistrict');
+
+function arrayEditor(functionName, propertyName, subProp, newValue, index) {
+  elizabethSanger[propertyName][index][subProp] = newValue;
+  functionName();
+}
+
+arrayEditor(statementStringBuilder, statements, statement, 'Strict tarrifs on foreign pies', 1);
